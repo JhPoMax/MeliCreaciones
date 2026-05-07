@@ -1,0 +1,225 @@
+.hero-section {
+
+  background: linear-gradient(135deg, #da1581, #7007b6);
+  
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  width: 100%;
+
+}
+
+/* Imagen del banner */
+
+.hero-section img {
+  max-height: 360px;
+  width: auto;
+
+  border-radius: 20px;
+  padding: 4px;
+
+  background: linear-gradient(135deg, #00e5ff, #ff00cc);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.hero-section img {
+  transition: 0.4s;
+}
+
+.hero-section img:hover {
+  transform: scale(1.05);
+}
+
+.reel-container {
+  width: 380px;      
+  aspect-ratio: 9 / 16;
+  margin: auto;
+  border-radius: 15px;
+  overflow: hidden;
+}
+  
+
+
+.reel-container:hover {
+  transform: scale(1.03);
+}
+/* Texto */
+
+.hero-section h1 {
+
+  font-family: 'Dancing Script', cursive;
+  font-size: 5rem;
+  letter-spacing: 1px;
+  animation: fadeTexto 1.2s ease;
+  color: #ffffff;
+}
+
+.hero-section p {
+  color: rgba(255,255,255,0.85);
+}
+
+.titulo-productos {
+  color: #7007b6; /* morado elegante */
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+}
+
+.texto-icono {
+  color: #7007b6; /* morado elegante */
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+}
+
+.btn.servicio-detalles {
+   background: linear-gradient(135deg, #ff4da6, #7007b6);
+
+  color: white;
+
+  border: none;
+
+  border-radius: 40px;
+
+  padding: 15px 50px;
+
+  font-family: 'Poppins', sans-serif;
+
+  font-size: 1.2rem;
+
+  display: inline-block;
+  width: 40%;
+}
+
+.titulo-arte {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  color: #da1581;
+}
+
+.texto-arte {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+
+/* Botón */
+
+.hero-section button {
+
+  font-size: 1rem;
+
+  border-radius: 10px;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+
+}
+
+/* Efecto hover botón */
+
+.hero-section button:hover {
+
+  transform: scale(1.05);
+
+}
+
+/* Animaciones */
+
+@keyframes aparecerHero {
+
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+@keyframes fadeTexto {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+
+}
+
+/* Iconos servicios */
+
+.bi {
+  font-size: 40px;
+  color: #ffb3ec;
+  transition: 0.3s;
+}
+
+
+/* Tarjetas productos */
+
+.card {
+
+  border-radius: 15px;
+  overflow: hidden;
+
+  transition: 0.3s;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+
+}
+
+.card h5 {
+  font-family: 'Dancing Script', cursive;
+
+  font-size: 2rem;
+
+  color: #da1581;
+
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+
+  transform: translateY(-10px);
+
+}
+
+.card-texto {
+  
+  font-family: 'Poppins', sans-serif;
+
+   color: #666;
+
+  font-size: 0.95rem;
+}
+
+/* Imágenes productos */
+
+.card-img-top {
+
+  height: 300px;
+
+  object-fit: cover;
+
+}
+
+
+ .btn {
+  background: #ff4da6;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-family: 'Dancing Script', cursive;
+font-size: 1.5rem;
+width: 30%;
+}
+
+.btn:hover {
+  background: #e60073;
+}

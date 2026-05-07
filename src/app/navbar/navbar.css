@@ -1,0 +1,85 @@
+.navbar {
+
+  background: linear-gradient(135deg, #da1581, #7007b6);
+  padding: 12px 20px;
+font-family: 'Poppins', sans-serif;
+ box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+ backdrop-filter: blur(10px);
+}
+
+
+.btn-menu {
+  background: #ffffff;
+  color: #da1581;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-weight: bold;
+}
+
+.navbar-top {
+  background: transparent;
+  transition: 0.4s;
+}
+.navbar-scroll {
+
+ background: linear-gradient(135deg, #da1581, #7007b6);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  transition: 0.4s;
+
+}
+
+
+.nav-link {
+
+  color: white !important;
+
+  transition: 0.3s;
+
+}
+
+.nav-link:hover {
+
+  color: #ffb3ec !important;
+  transform: translateY(-2px);
+
+}
+
+
+.navbar-brand {
+
+ font-family: 'Dancing Script', cursive;
+  font-size: 1.8rem;
+  color: #ffffff !important;
+}
+
+
+
+.navbar-nav .nav-item {
+
+  margin-left: 10px;
+
+}
+
+.navbar-nav .nav-link.active {
+  border-bottom: 2px solid #ffffff;
+}
+
+
+.logo-navbar {
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.logo-navbar:hover {
+  transform: scale(1.05);
+}
+
+.navbar {
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 9999;
+
+}

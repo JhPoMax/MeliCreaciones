@@ -1,0 +1,160 @@
+<section class="seccion-contacto">
+
+  <div class="container fade-in">
+
+    <div class="text-center mb-5">
+
+      <h2 class="fw-bold">
+        Contáctanos
+      </h2>
+
+      <p class="text-muted">
+        Estamos listos para ayudarte con tus proximos regalos o decoraciones.
+      </p>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-7 mb-4">
+
+        <div class="card contacto-card p-4">
+
+          <form (ngSubmit)="enviarMensaje(form)" #form="ngForm">
+
+
+            <div class="mb-3">
+
+              <label class="form-label">
+                Nombre completo
+              </label>
+
+              <input type="text" class="form-control" placeholder="Ingresa tu nombre" ngModel name="nombre" required
+                #nombre="ngModel" [class.is-invalid]="nombre.invalid && nombre.touched">
+
+              <div class="text-danger" *ngIf="nombre.invalid && nombre.touched">
+
+                El nombre es obligatorio
+
+              </div>
+
+            </div>
+
+
+            <div class="mb-3">
+
+              <label class="form-label">
+                Correo electrónico
+              </label>
+
+              <input type="email" class="form-control" placeholder="ejemplo@email.com" ngModel name="correo" required
+                email #correo="ngModel" [class.is-invalid]="correo.invalid && correo.touched">
+
+              <div class="text-danger" *ngIf="correo.errors?.['required'] && correo.touched">
+
+                El correo es obligatorio
+
+              </div>
+
+              <div class="text-danger" *ngIf="correo.errors?.['email'] && correo.touched">
+
+                Ingresa un correo válido
+
+              </div>
+
+            </div>
+
+
+            <div class="mb-3">
+
+              <label class="form-label">
+                Mensaje
+              </label>
+
+              <textarea class="form-control" rows="4" placeholder="Escribe tu mensaje aquí" ngModel name="mensaje"
+                required #mensaje="ngModel" [class.is-invalid]="mensaje.invalid && mensaje.touched"></textarea>
+
+              <div class="text-danger" *ngIf="mensaje.invalid && mensaje.touched">
+
+                El mensaje es obligatorio
+
+              </div>
+
+            </div>
+
+
+            <div class="botones-contacto mt-4">
+
+              <!-- WhatsApp -->
+
+              <button type="button" class="btn whatsapp-btn" [disabled]="form.invalid" (click)="enviarMensaje(form)">
+
+                <i class="bi bi-whatsapp"></i> WhatsApp
+
+              </button>
+
+              <!-- Correo -->
+
+              <button type="button" class="btn correo-btn" [disabled]="form.invalid" (click)="enviarCorreo(form)">
+
+                📩 Correo
+
+              </button>
+
+            </div>
+
+
+            <div *ngIf="mensajeEnviado" class="alert alert-success mt-3 text-center">
+
+              ✅ Mensaje enviado correctamente.
+              Nos pondremos en contacto contigo pronto.
+
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-md-5">
+
+        <div class="info-contacto p-4">
+
+          <h4 class="fw-bold mb-4">
+            Información de contacto
+          </h4>
+
+          <p>
+            📍 Bucaramanga, Santander
+          </p>
+
+          <p>
+            📞 +57 302 3724511 - +57 305 3415853
+          </p>
+
+          <p>
+            ✉️ melicreaciones26@gmail.com
+          </p>
+
+          <hr>
+
+          <h5 class="fw-bold mt-4">
+            Horario de atención
+          </h5>
+
+          <p class="text-muted">
+            Todos los dias
+            24/7
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

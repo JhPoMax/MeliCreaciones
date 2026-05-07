@@ -1,0 +1,152 @@
+.nosotros-img {
+  border-radius: 15px;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.15);
+}
+
+
+.mision-box,
+.vision-box {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.mision-box:hover,
+.vision-box:hover {
+  transform: translateY(-5px);
+}
+
+.animar {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: aparecer 0.8s ease forwards;
+}
+
+/* Fondo general */
+
+.container {
+
+  position: relative;
+
+}
+
+/* Título principal */
+
+.titulo-nosotros {
+
+  font-family: 'Dancing Script', cursive;
+
+  font-size: 4rem;
+
+  color: #7007b6;
+
+  position: relative;
+
+}
+
+/* Línea decorativa */
+
+.titulo-nosotros::after {
+
+  content: "";
+
+  display: block;
+
+  width: 120px;
+
+  height: 4px;
+
+  margin: 10px auto;
+
+  border-radius: 20px;
+
+  background: linear-gradient(90deg, #ff4da6, #7007b6);
+
+}
+
+/* Caja lado derecho */
+
+.info-nosotros {
+
+  background: rgba(255,255,255,0.6);
+
+  backdrop-filter: blur(10px);
+
+  padding: 35px;
+
+  border-radius: 25px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+}
+
+/* Imagen */
+
+.nosotros-img {
+
+  border-radius: 30px;
+
+  box-shadow: 0 15px 40px rgba(218,21,129,0.2);
+
+  transition: 0.4s;
+
+}
+
+.nosotros-img:hover {
+
+  transform: scale(1.03);
+
+}
+
+/* Títulos internos */
+
+.info-nosotros h4 {
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 2.2rem;
+
+  color: #7007b6;
+
+}
+
+/* Misión y visión */
+
+.mision-box,
+.vision-box {
+
+  background: white;
+
+  padding: 20px;
+
+  border-radius: 18px;
+
+  border-left: 5px solid #ff4da6;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+
+  transition: 0.3s;
+
+}
+
+/* Hover */
+
+.mision-box:hover,
+.vision-box:hover {
+
+  transform: translateY(-6px);
+
+}
+
+/* Títulos misión y visión */
+
+.titulo-caja {
+
+  color: #da1581;
+
+  font-family: 'Poppins', sans-serif;
+
+  font-size: 1.5rem;
+
+}

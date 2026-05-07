@@ -1,0 +1,201 @@
+
+.seccion-contacto {
+
+  background: linear-gradient(
+    180deg,
+    #fff0fa,
+    #fdf7ff
+  );
+
+  padding: 80px 0;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+
+.botones-contacto {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* BOTÓN WHATSAPP */
+
+.whatsapp-btn {
+
+  background: #25D366;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 30px;
+
+  padding: 12px 28px;
+
+  font-family: 'Poppins', sans-serif;
+
+  transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+
+  background: #1ebe5d;
+
+  transform: scale(1.05);
+}
+
+/* BOTÓN CORREO */
+
+.correo-btn {
+
+  background: linear-gradient(135deg, #da1581, #7007b6);
+
+  color: white;
+
+  border: none;
+
+  border-radius: 30px;
+
+  padding: 12px 28px;
+
+  font-family: 'Poppins', sans-serif;
+
+  transition: 0.3s;
+}
+
+.correo-btn:hover {
+
+  transform: scale(1.05);
+
+  opacity: 0.9;
+}
+
+.contacto-card {
+
+  background: rgba(255,255,255,0.75);
+
+  backdrop-filter: blur(10px);
+
+  border-radius: 25px;
+
+  border: 1px solid rgba(255,255,255,0.4);
+
+  box-shadow: 0 10px 35px rgba(0,0,0,0.12);
+
+  transition: 0.4s;
+}
+
+.contacto-card:hover {
+
+  transform: translateY(-5px);
+
+  box-shadow: 0 15px 40px rgba(218,21,129,0.2);
+}
+
+ .seccion-contacto h2 {
+
+  font-family: 'Dancing Script', cursive;
+
+  font-size: 4rem;
+
+  color: #b0007a;
+}
+
+.seccion-contacto .text-muted {
+
+  font-family: 'Poppins', sans-serif;
+
+  font-size: 1.1rem;
+
+  color: #7a4a68 !important;
+}
+
+.form-control {
+
+  border-radius: 18px;
+
+  border: 2px solid #f3c4e8;
+
+  padding: 14px;
+
+  transition: 0.3s;
+
+  box-shadow: none;
+}
+
+.form-control:focus {
+
+  border-color: #da1581;
+
+  box-shadow: 0 0 12px rgba(218,21,129,0.25);
+}
+
+.info-contacto {
+
+  background: rgba(255,255,255,0.5);
+
+  border-radius: 25px;
+
+  padding: 30px;
+
+  backdrop-filter: blur(8px);
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.info-contacto h4,
+.info-contacto h5 {
+
+  color: #b0007a;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+.whatsapp-btn {
+
+  background: linear-gradient(
+    135deg,
+    #25D366,
+    #1ebe5d
+  );
+
+  border: none;
+
+  border-radius: 35px;
+
+  padding: 14px 30px;
+
+  font-size: 1.1rem;
+
+  box-shadow: 0 5px 20px rgba(37,211,102,0.3);
+}
+
+.correo-btn {
+
+  background: linear-gradient(
+    135deg,
+    #da1581,
+    #7007b6
+  );
+
+  border: none;
+
+  border-radius: 35px;
+
+  padding: 14px 30px;
+
+  font-size: 1.1rem;
+
+  box-shadow: 0 5px 20px rgba(112,7,182,0.3);
+}
+
+.whatsapp-btn:hover,
+.correo-btn:hover {
+
+  transform: scale(1.05);
+
+  opacity: 0.95;
+}

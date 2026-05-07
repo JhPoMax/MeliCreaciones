@@ -1,0 +1,97 @@
+.footer {
+
+ background: linear-gradient(135deg, #7007b6, #2a003f);
+  color: white;
+
+  padding-top: 40px;
+
+  margin-top: 0px;
+   font-family: 'Poppins', sans-serif;
+   font-size: 1.1rem;   
+    
+
+}
+
+/* Links */
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 1.1rem;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.8;
+
+}
+
+.info-meli h5 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  color: #ffb3ec;
+}
+
+.info-meli p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.8;
+}
+
+.footer a:hover {
+
+  color: #ffb3ec;
+
+  padding-left: 5px;
+
+}
+
+/* Títulos */
+
+.footer h5 {
+
+  margin-bottom: 15px;
+   font-family: 'Poppins', sans-serif;
+   font-size: 1.4rem;
+   color: #c77dff;
+    letter-spacing: 1px;
+    
+}
+
+/* Línea divisoria */
+
+.footer hr {
+
+  opacity: 0.3;
+
+}
+
+/* Redes sociales */
+
+.redes i {
+  font-size: 2rem;
+   color: #ffffff;
+}
+
+/* Hover redes */
+
+.redes i:hover {
+
+
+ color: #ffb3ec;
+
+
+  transform: scale(1.2);
+
+}
+
+/* Texto inferior */
+
+.footer .text-center {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem; /* 👈 antes 0.9rem */
+  color: #000000;
+  opacity: 0.8;
+}

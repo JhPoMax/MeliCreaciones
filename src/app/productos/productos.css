@@ -1,0 +1,255 @@
+.producto-card {
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.producto-card:hover {
+  transform: translateY(-10px);
+}
+
+.producto-img {
+  height: 200px;
+  object-fit: cover;
+  padding: 15px;
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  /* altura fija */
+  object-fit: contain;
+  background-color: #f8f9fa;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: aparecerSuave 1s ease forwards;
+}
+
+
+.fade-delay-1 {
+  animation-delay: 0.2s;
+}
+
+.fade-delay-2 {
+  animation-delay: 0.4s;
+}
+
+.fade-delay-3 {
+  animation-delay: 0.6s;
+}
+
+
+@keyframes aparecerSuave {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fondo sección */
+
+.container {
+
+  position: relative;
+
+}
+
+/* Título principal */
+
+.titulo-productos {
+
+  font-family: 'Dancing Script', cursive;
+
+  font-size: 4rem;
+
+  color: #7007b6;
+
+}
+
+/* Subtítulo */
+
+.text-center p {
+
+  font-size: 1.1rem;
+
+}
+
+/* Tarjetas */
+
+.producto-card {
+
+  border: none;
+
+  border-radius: 25px;
+
+  overflow: hidden;
+
+  background: white;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+  transition: 0.4s;
+
+}
+
+/* Hover elegante */
+
+.producto-card:hover {
+
+  transform: translateY(-12px) scale(1.02);
+
+  box-shadow: 0 20px 40px rgba(218,21,129,0.18);
+
+}
+
+/* Imágenes */
+
+.producto-img {
+
+  height: 380px;
+
+  object-fit: contain;
+
+  padding: 0;
+
+  transition: 0.4s;
+
+}
+
+/* Zoom imagen */
+
+.producto-card:hover .producto-img {
+
+  transform: scale(1.05);
+
+}
+
+/* Fondo imagen */
+
+.card img {
+
+  background: #fff7fb;
+
+}
+
+/* Título cards */
+
+.card-title {
+
+  color: #7007b6;
+
+ font-family: 'Dancing Script', cursive;
+
+  font-size: 1.6rem;
+
+}
+
+/* Texto cards */
+
+.card-text {
+
+  font-size: 1rem;
+
+  line-height: 1.6;
+
+}
+
+/* Botones */
+
+.producto-card .btn {
+
+  background: linear-gradient(135deg, #ff4da6, #7007b6);
+
+  border: none;
+
+  border-radius: 40px;
+
+  padding: 12px 30px;
+
+  color: white;
+
+  font-family: 'Poppins', sans-serif;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+
+}
+
+/* Hover botón */
+
+.producto-card .btn:hover {
+
+  transform: scale(1.08);
+
+  box-shadow: 0 8px 20px rgba(218,21,129,0.3);
+
+}
+
+/* Flechas */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+
+  background-color: rgba(0,0,0,0.4);
+
+  border-radius: 50%;
+
+  padding: 18px;
+
+}
+
+/* Imágenes */
+
+.producto-card {
+
+  border-radius: 30px;
+
+  overflow: hidden;
+
+}
+
+.carousel-inner {
+
+  border-radius: 30px;
+
+  overflow: hidden;
+
+}
+
+.carousel-item img {
+
+  height: 420px;
+
+  width: 100%;
+
+  object-fit: contain;
+
+  background: #fff7fb;
+
+  padding: 10px;
+
+  border-radius: 30px;
+
+}
+
+
+
+/* Flechas más bonitas */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 50%;
+  padding: 15px;
+}
+
+/* Efecto hover */
+.producto-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}

@@ -1,0 +1,148 @@
+/* You can add global styles to this file, and also import other style files */
+/* ESTILOS GENERALES */
+
+
+body {
+    background-color: #f4f6f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Títulos */
+
+h2 {
+    color: #0dcaf0;
+    font-weight: bold;
+}
+
+h4,
+h5 {
+    color: #343a40;
+}
+
+/* Espaciado general */
+
+.container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+/* TARJETAS (Cards) */
+
+
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* BOTONES */
+
+
+.btn-info {
+    background-color: #0dcaf0;
+    border: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-info:hover {
+    background-color: #0aa2c0;
+}
+
+
+/* IMÁGENES */
+
+
+img {
+    border-radius: 10px;
+}
+
+/* ANIMACIÓN */
+
+.fade-in {
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.whatsapp-float {
+
+  position: fixed;
+
+  bottom: 20px;
+
+  right: 20px;
+
+  width: 65px;
+
+  height: 65px;
+
+  background: #25D366;
+
+  color: white;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-size: 2rem;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+
+  z-index: 9999;
+
+  transition: 0.3s;
+
+  text-decoration: none;
+
+}
+
+.whatsapp-float:hover {
+
+  transform: scale(1.1);
+
+  background: #1ebe5d;
+
+}
+
+.navbar {
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 9999;
+
+}
