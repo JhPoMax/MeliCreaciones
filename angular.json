@@ -7,7 +7,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "mi-app": {
+    "melicreaciones": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -73,10 +73,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "mi-app:build:production"
+              "buildTarget": "melicreaciones:build:production"
             },
             "development": {
-              "buildTarget": "mi-app:build:development"
+              "buildTarget": "melicreaciones:build:development"
             }
           },
           "defaultConfiguration": "development"
